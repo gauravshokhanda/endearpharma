@@ -8,117 +8,192 @@ export interface Product {
   sideEffects: string[];
   image: string;
   composition: string;
+  indications?: string[];
 }
 
 export const products: Product[] = [
   {
     id: 1,
-    name: "MediRelief",
-    category: "Pain Management",
-    description: "Fast-acting pain relief medication designed to alleviate moderate to severe pain. MediRelief is formulated with our advanced pain-blocking technology for quick and effective results.",
-    uses: ["Headache", "Muscle pain", "Joint pain", "Dental pain", "Menstrual cramps"],
-    dosage: "Adults: 1-2 tablets every 6-8 hours, not exceeding 6 tablets in 24 hours. Children (12+ years): 1 tablet every 8 hours.",
-    sideEffects: ["Nausea", "Dizziness", "Drowsiness", "Upset stomach"],
-    image: "https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg",
-    composition: "Paracetamol 500mg, Caffeine 65mg"
+    name: "Daib-end",
+    category: "Diabetes Management",
+    description: "Daib-end is a comprehensive capsule formulated with natural ingredients to support blood sugar regulation and overall metabolic health. It contains a blend of herbs known for their beneficial effects on blood glucose levels and lipid profiles. Karela contains an insulin-like compound called Polypeptide or p-insulin which has been shown to control diabetes naturally. Jamun is known to improve blood sugar control. This fruit is 50% water and 14.5% carbohydrates. It contains no sucrose and has hypoglycemic effect that helps reduce blood and urine sugar levels. Giloy helps in the production of insulin & burn excess glucose which further helps in reducing blood sugar levels. Shilajit produced a significant reduction in blood glucose level and also produced beneficial effects on the lipid profile.",
+    uses: ["Regulates digestion", "Maintains blood sugar level", "Reduces stress"],
+    dosage: "",
+    sideEffects: [],
+    image: "",
+    composition: "Karela 45mg, Jamun 45mg, Gudmar 25mg, Arjuna 40mg, Giloy 45mg, Vidang 40mg, Karanjava 40mg, Neem 40mg, Chiraita 45mg, Paneer Doda 45mg, Methi 25mg, Ashwagandha 45mg, Shilajit 10mg, Loh Bhasam 10mg",
+    indications: ["Regulates digestion", "Maintains blood sugar level", "Reduces stress"]
   },
   {
     id: 2,
-    name: "BroncoEase",
-    category: "Respiratory",
-    description: "An effective bronchodilator that helps open up the airways, making breathing easier for patients with respiratory conditions.",
-    uses: ["Asthma", "Bronchitis", "COPD", "Breathing difficulties"],
-    dosage: "Adults: 1 inhalation twice daily. Severe cases may require up to 2 inhalations twice daily as prescribed by physician.",
-    sideEffects: ["Dry mouth", "Throat irritation", "Headache", "Increased heart rate"],
-    image: "https://images.pexels.com/photos/139398/himalayas-mountains-nepal-himalaya-139398.jpeg",
-    composition: "Salbutamol 100mcg/dose, Fluticasone propionate 250mcg/dose"
+    name: "Dearcef",
+    category: "Anti-Bacterial",
+    description: "Designed to kill bacteria. Cefixime is useful in cases of uncomplicated typhoid fever. Cefixime has comparable clinical efficacy and a better adverse events profile than co-amoxiclav. High efficacy & low incidence of side effects make it the drug of choice in RTI.",
+    uses: ["Useful in cases of uncomplicated typhoid fever", "Cefixime has comparable clinical efficacy and a better adverse events profile than co-amoxiclav", "High efficacy & low incidence of side effects make it the drug of choice in RTI"],
+    dosage: "",
+    sideEffects: [],
+    image: "",
+    composition: "Cefixime 100 mg / 200 mg",
+    indications: ["Community Acquired Pneumonia", "Respiratory Tract Infection", "Pharyngitis and Tonsillitis", "Acute exacerbation of chronic bronchitis", "Urinary Tract Infections", "Typhoid Fever"]
   },
   {
     id: 3,
-    name: "CardioHealth",
-    category: "Cardiovascular",
-    description: "A comprehensive heart health supplement designed to support cardiovascular function and maintain healthy cholesterol levels.",
-    uses: ["Maintain blood pressure", "Support heart function", "Regulate cholesterol levels"],
-    dosage: "Adults: 1 tablet daily with meals, or as directed by your healthcare provider.",
-    sideEffects: ["Mild gastrointestinal discomfort", "Nausea in sensitive individuals"],
-    image: "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg",
-    composition: "Omega-3 fatty acids 1000mg, Coenzyme Q10 100mg, Vitamin E 100IU"
+    name: "En-D3",
+    category: "Vitamin Supplement",
+    description: "Cholecalciferol Solution 60000 IU Nano Shot. Nano Emulsion En-D3. Nanoemulsion Droplet Sizes as Per Pharmaceutical Standards Should be below 100 nm. Any Formulation above 100 nm Droplet size is not an Nanoemulsion? that would be a Microemulsion. VITAMIN D3 Deficiency is Recognized as Pandemic affecting all ages and Strata of population as endogenous Cutaneous System of VIT-D3 is Insufficient so Supplement Needed.",
+    uses: ["Cholecalciferol Solution", "Vitamin D3 Deficiency Supplement", "Nano Emulsion Formula"],
+    dosage: "",
+    sideEffects: [],
+    image: "",
+    composition: "Cholecalciferol 60000 IU",
+    indications: ["Prediabetes/Dizbetes", "Erectile Dysfunction", "CKD Hyperpara Thyroidism", "Prevent heart attack up to 50%", "Improves product of test hormones", "Mental Health/ Depression"]
   },
   {
     id: 4,
-    name: "ImmunoBoost",
-    category: "Immunity",
-    description: "Advanced immunity support supplement that helps strengthen the body's natural defenses against infections and illnesses.",
-    uses: ["Boost immune system", "Prevent common cold and flu", "Reduce recovery time"],
-    dosage: "Adults: 1 tablet daily. During illness: 1 tablet twice daily for up to 7 days.",
-    sideEffects: ["Rarely causes stomach upset in sensitive individuals"],
-    image: "https://images.pexels.com/photos/4030914/pexels-photo-4030914.jpeg",
-    composition: "Vitamin C 1000mg, Zinc 15mg, Elderberry extract 150mg, Echinacea 100mg"
+    name: "Endear Gold",
+    category: "Sexual Health / Energy Supplement",
+    description: "Each capsule contains various ingredients. Tongkat Ali has demonstrated the ability to increase libido and improve erectile function when compared to a placebo. Tongkat Ali results showed an increase in testosterone levels and muscle strength, measured by hand-grip test. As Tongkat Ali brings free testosterone levels closer to normal, it can help physically active seniors, both male & female, increase muscle strength.",
+    uses: ["Brings Back lost vigour and vitality", "Increases sexual desires & makes you perform at anytime", "Helps in increasing the stamina", "Boots power to perform longer"],
+    dosage: "",
+    sideEffects: [],
+    image: "",
+    composition: "Shatavari 100 mg, Aswagandha 100 mg, Shudh Konch Beej 20 mg, Latakasturi 10 mg, Musli Safed 20 mg, Akarkara 20 mg, Javitri 25 mg, Gokshru 30 mg, Vidarikand 45 mg, Kesar 5 mg, Makardhwaj 10 mg, Triwang Bhasam 25 mg, Loh Bhasam 30 mg, Swanwng Bhasm 25 mg, Shilajeet 35 mg, Tongkat Ali (Eurycoma longifolia) Wh.pt. 200mg",
+    indications: ["Eliminates Weakness", "Boost Stamina", "Increases Testosterone", "Supports Immunity", "Speeds Muscle Recovery"]
   },
+  
   {
     id: 5,
-    name: "DigestiCare",
-    category: "Gastrointestinal",
-    description: "A comprehensive digestive health medication that relieves symptoms of acid reflux, heartburn, and indigestion quickly and effectively.",
-    uses: ["Heartburn", "Acid reflux", "Indigestion", "Stomach discomfort"],
-    dosage: "Adults: 1 tablet 30-60 minutes before meals, up to 3 times daily. Do not exceed 3 tablets in 24 hours.",
-    sideEffects: ["Constipation", "Headache", "Nausea", "Diarrhea (rare)"],
-    image: "https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg",
-    composition: "Omeprazole 20mg, Simethicone 125mg"
+    name: "ENDECOLD-DS",
+    category: "Cold & Flu / Respiratory",
+    description: "ENDECOLD-DS is a syrup containing Paracetamol for pain and fever, Phenylephrine for nasal passage and respiratory system, Chlorpheniramine Maleate as an antihistamine, and Sodium Citrate as an expectorant. It is formulated to provide relief from cold and flu symptoms.",
+    uses: [
+      "Most time tested Antipyretic/analgesic",
+      "No significant action on COX-1 & COX-2 (Paracetamol)",
+      "Safest anti-pyretic analgesic (Phenylephrine)",
+      "Minimal effects on cardiovascular, Respiratory & GI System (Phenylephrine)",
+      "Open Airways/Nasal passage (Phenylephrine)",
+      "Competitively antagonise action of histamine at H1receptors (Chlorpheniramine)",
+      "Effectively block Histamine induced broncho constriction (Chlorpheniramine)",
+      "A well recognised expectorant, facilitates raising of sputum (Sodium Citrate)"
+    ],
+    dosage: "Each 5ml Contains",
+    sideEffects: [],
+    image: "",
+    composition: "Paracetamol 250mg, Phenylephrine Hcl 5mg, Chlorpheniramine Maleate 2mg, Sodium Citrate 60mg",
+    indications: [
+      "Seasonal Allergic Rhinitis",
+      "Nasal Congestion",
+      "Fever along with body pain",
+      "Sneezing",
+      "Irritation",
+      "Blocked Nose"
+    ]
   },
   {
     id: 6,
-    name: "SleepWell",
-    category: "Sleep Aid",
-    description: "A natural sleep aid that promotes restful sleep without morning grogginess. Helps regulate sleep cycles and improve sleep quality.",
-    uses: ["Insomnia", "Jet lag", "Restless sleep", "Sleep disturbances"],
-    dosage: "Adults: 1 tablet 30 minutes before bedtime. Not recommended for children under 18 years.",
-    sideEffects: ["Rarely causes vivid dreams", "Mild headache in some individuals"],
-    image: "https://images.pexels.com/photos/3771069/pexels-photo-3771069.jpeg",
-    composition: "Melatonin 3mg, Valerian root extract 200mg, L-theanine 100mg, Magnesium 50mg"
+    name: "ENDECOLD-DROP",
+    category: "Cold & Flu / Respiratory",
+    description: "ENDECOLD-DROP is a liquid formulation containing Paracetamol for pain and fever, Phenylephrine for nasal passage and respiratory system, and Chlorpheniramine Maleate as an antihistamine. It is designed to alleviate cold and flu symptoms.",
+    uses: [
+      "Most time tested Antipyretic/analgesic (Paracetamol)",
+      "No significant action on COX-1 & COX-2 (Paracetamol)",
+      "Safest anti-pyretic analgesic (Phenylephrine)",
+      "Minimal effects on cardiovascular, Respiratory & GI System (Phenylephrine)",
+      "Open Airways/Nasal passage (Phenylephrine)",
+      "Competitively antagonise action of histamine at H1receptors (Chlorpheniramine)",
+      "Effectively block Histamine induced broncho constriction (Chlorpheniramine)"
+    ],
+    dosage: "Each ml Contains",
+    sideEffects: [],
+    image: "",
+    composition: "Paracetamol 125mg, Phenylephrine 2.5mg, Chlorpheniramine Maleate 1mg",
+    indications: [
+      "Seasonal Allergic Rhinitis",
+      "Nasal Congestion",
+      "Fever along with body pain",
+      "Sneezing",
+      "Irritation",
+      "Blocked Nose"
+    ]
   },
   {
     id: 7,
-    name: "GlucoBalance",
-    category: "Metabolic",
-    description: "An advanced formula designed to help maintain healthy blood sugar levels and support metabolic function.",
-    uses: ["Support blood sugar regulation", "Enhance insulin sensitivity", "Support metabolic health"],
-    dosage: "Adults: 1 tablet twice daily with meals, or as directed by your healthcare provider.",
-    sideEffects: ["Occasional gastrointestinal discomfort", "Metallic taste (rare)"],
-    image: "https://images.pexels.com/photos/7447022/pexels-photo-7447022.jpeg",
-    composition: "Chromium picolinate 200mcg, Alpha-lipoic acid 300mg, Cinnamon extract 250mg"
+    name: "Endeflam-S",
+    category: "Pain Relief / Anti-inflammatory",
+    description: "Endeflam-S is a combination tablet that offers effective relief from inflammation and musculoskeletal pain. It includes Aceclofenac for targeted anti-inflammatory action, Paracetamol for rapid pain and fever relief, and Serratiopeptidase to reduce swelling and promote tissue repair.",
+    uses: [
+      "Targets inflammation at specific sites (Aceclofenac)",
+      "Quickly initiates analgesic & antipyretic activity (Paracetamol)",
+      "Centrally acting enzyme for musculoskeletal pain (Serratiopeptidase)"
+    ],
+    dosage: "Each tablet contains: Aceclofenac 100mg, Paracetamol 325mg, Serratiopeptidase 15mg",
+    sideEffects: [],
+    image: "/mnt/data/WhatsApp Image 2025-06-17 at 11.10.40_bbfebbb0.jpg",
+    composition: "Aceclofenac 100mg, Paracetamol 325mg, Serratiopeptidase 15mg",
+    indications: [
+      "Low Back Pain",
+      "Post Operative Pain",
+      "Osteoarthritis",
+      "Cuts, Wounds & Burns",
+      "Fracture & Trauma",
+      "Sports Injuries",
+      "Ankylosing Spondylitis",
+      "Dysmenorrhea"
+    ]
   },
+  
   {
     id: 8,
-    name: "JointFlex",
-    category: "Musculoskeletal",
-    description: "A comprehensive joint health supplement that helps reduce inflammation, supports cartilage repair, and improves joint mobility.",
-    uses: ["Joint pain relief", "Arthritis symptoms", "Improved mobility", "Cartilage support"],
-    dosage: "Adults: 2 tablets daily with meals for the first month, then 1 tablet daily for maintenance.",
-    sideEffects: ["Mild stomach discomfort", "Allergic reactions in shellfish-allergic individuals (contains glucosamine)"],
-    image: "https://images.pexels.com/photos/8544979/pexels-photo-8544979.jpeg",
-    composition: "Glucosamine sulfate 1500mg, Chondroitin sulfate 1200mg, MSM 1000mg, Turmeric extract 200mg"
+    name: "Endeflam-TH",
+    category: "Musculoskeletal / Pain Relief",
+    description: "Endeflam-TH is a dual-action tablet combining Etoricoxib, a selective COX-2 inhibitor for pain relief, and Thiocolchicoside, a centrally acting muscle relaxant. This combination is effective in treating inflammatory and painful musculoskeletal conditions without affecting muscle tone.",
+    uses: [
+      "Symptomatic treatment of osteoarthritis, rheumatoid arthritis, ankylosing spondylitis, and acute gouty arthritis (Etoricoxib)",
+      "Minimal suppression of COX-1 and superior pain relief (Etoricoxib)",
+      "More effective in backache, neuralgia pain, Parkinsonism, and sciatic pain (Thiocolchicoside)",
+      "Centrally acting muscle relaxant with no sedation or muscle tone impairment (Thiocolchicoside)"
+    ],
+    dosage: "Each tablet contains: Etoricoxib 60mg, Thiocolchicoside 4mg",
+    sideEffects: [],
+    image: "/mnt/data/WhatsApp Image 2025-06-17 at 11.23.42_3203591b.jpg",
+    composition: "Etoricoxib 60mg, Thiocolchicoside 4mg",
+    indications: [
+      "Muscle Spasm",
+      "Torticollis",
+      "Low Back Pain",
+      "Sprain & Strain",
+      "Sciatica",
+      "Rheumatoid Arthritis",
+      "Acute pain and gout",
+      "Psoriatic arthritis"
+    ]
   },
   {
     id: 9,
-    name: "CalmMind",
-    category: "Mental Health",
-    description: "An advanced anti-anxiety and mood support supplement that helps promote calmness and mental clarity without drowsiness.",
-    uses: ["Reduce anxiety", "Improve mood", "Manage stress", "Enhance focus"],
-    dosage: "Adults: 1 capsule twice daily with meals, or as directed by your healthcare provider.",
-    sideEffects: ["Mild drowsiness in sensitive individuals", "Vivid dreams occasionally reported"],
-    image: "https://images.pexels.com/photos/3421920/pexels-photo-3421920.jpeg",
-    composition: "GABA 500mg, L-theanine 200mg, Ashwagandha extract 300mg, Rhodiola rosea 150mg"
-  },
-  {
-    id: 10,
-    name: "DermaClear",
-    category: "Dermatological",
-    description: "A topical treatment designed to clear acne and prevent future breakouts while soothing and repairing damaged skin.",
-    uses: ["Acne treatment", "Reduces inflammation", "Prevents breakouts", "Repairs skin barrier"],
-    dosage: "Apply a thin layer to affected areas 1-2 times daily after cleansing. Avoid eye area.",
-    sideEffects: ["Dryness", "Mild peeling", "Temporary redness", "Sensitivity to sunlight"],
-    image: "https://images.pexels.com/photos/3735615/pexels-photo-3735615.jpeg",
-    composition: "Salicylic acid 2%, Niacinamide 4%, Tea tree oil 1%, Hyaluronic acid 0.5%"
+    name: "Endexim-O",
+    category: "Anti-Bacterial / Antibiotic",
+    description: "Endexim-O is a combination antibiotic tablet containing Cefpodoxime and Ofloxacin. It is designed to treat a wide range of bacterial infections by targeting both gram-positive and gram-negative bacteria, offering superior tissue penetration and bactericidal activity.",
+    uses: [
+      "Active against both gram-positive and gram-negative organisms (Cefpodoxime)",
+      "Greater tissue penetration than cefixime (Cefpodoxime)",
+      "Demonstrates excellent bactericidal activity against S. pneumoniae (Cefpodoxime)",
+      "Effective against aerobic and anaerobic bacteria (Ofloxacin)",
+      "Approved adjuvant in MDR TB therapy (Ofloxacin)",
+      "Excellent intracellular penetration (Ofloxacin)"
+    ],
+    dosage: "Each tablet contains: Cefpodoxime 200mg, Ofloxacin 200mg",
+    sideEffects: [],
+    image: "/mnt/data/WhatsApp Image 2025-06-17 at 11.53.41_9876f67b.jpg",
+    composition: "Cefpodoxime 200mg, Ofloxacin 200mg",
+    indications: [
+      "Tonsillitis",
+      "Chronic Bronchitis",
+      "Urinary Tract Infections",
+      "Community-acquired pneumonia",
+      "Typhoid / UFTTIS / Acute Otitis Media",
+      "Pyrexia of unknown origin"
+    ]
   }
-];
+  
+
+  ]; 

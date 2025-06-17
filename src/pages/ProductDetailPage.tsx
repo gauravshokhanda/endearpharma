@@ -7,7 +7,7 @@ const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<'overview' | 'uses' | 'dosage' | 'sideEffects'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'uses' | 'indications'>('overview');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -133,18 +133,11 @@ const ProductDetailPage: React.FC = () => {
               Uses
             </TabButton>
             <TabButton
-              active={activeTab === 'dosage'}
-              onClick={() => setActiveTab('dosage')}
-              icon={<Pill size={18} />}
+              active={activeTab === 'indications'}
+              onClick={() => setActiveTab('indications')}
+              icon={<List size={18} />}
             >
-              Dosage
-            </TabButton>
-            <TabButton
-              active={activeTab === 'sideEffects'}
-              onClick={() => setActiveTab('sideEffects')}
-              icon={<CircleAlert size={18} />}
-            >
-              Side Effects
+              Indications
             </TabButton>
           </div>
 
@@ -174,37 +167,18 @@ const ProductDetailPage: React.FC = () => {
               </div>
             )}
 
-            {activeTab === 'dosage' && (
+            {activeTab === 'indications' && (
               <div>
-                <h3 className="text-xl font-semibold text-text-dark mb-4">Recommended Dosage</h3>
-                <p className="text-text-light mb-3">
-                  Always follow the guidance of your healthcare provider when taking {product.name}.
-                </p>
-                <div className="bg-gray-50 p-4 rounded-md border border-gray-100">
-                  <p className="text-text-dark">{product.dosage}</p>
-                </div>
-                <p className="text-text-light mt-3 text-sm">
-                  <strong>Note:</strong> Dosage may be adjusted by your healthcare provider based on your specific condition and response to treatment.
-                </p>
-              </div>
-            )}
-
-            {activeTab === 'sideEffects' && (
-              <div>
-                <h3 className="text-xl font-semibold text-text-dark mb-4">Possible Side Effects</h3>
-                <p className="text-text-light mb-3">
-                  Like all medications, {product.name} may cause side effects, although not everybody gets them. Contact your healthcare provider if you experience any of the following:
-                </p>
-                <ul className="list-disc pl-5 space-y-2 text-text-light">
-                  {product.sideEffects.map((effect, index) => (
-                    <li key={index}>{effect}</li>
-                  ))}
-                </ul>
-                <div className="mt-4 bg-yellow-50 p-4 rounded-md border border-yellow-100">
-                  <p className="text-sm text-yellow-800">
-                    <strong>Important:</strong> This list may not include all possible side effects. If you notice any side effects not listed here, please contact your healthcare provider.
-                  </p>
-                </div>
+                <h3 className="text-xl font-semibold text-text-dark mb-4">Indications</h3>
+                {product.indications && product.indications.length > 0 ? (
+                  <ul className="list-disc pl-5 space-y-2 text-text-light">
+                    {product.indications.map((indication, index) => (
+                      <li key={index}>{indication}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-text-light">No specific indications listed for this product.</p>
+                )}
               </div>
             )}
           </div>
@@ -223,15 +197,12 @@ interface TabButtonProps {
 
 const TabButton: React.FC<TabButtonProps> = ({ active, onClick, children, icon }) => (
   <button
+    className={`flex items-center space-x-2 px-6 py-3 text-sm font-medium transition-colors
+      ${active ? 'text-secondary-red border-b-2 border-secondary-red' : 'text-text-light hover:text-text-dark'}`}
     onClick={onClick}
-    className={`flex items-center py-3 px-5 text-sm font-medium transition-colors ${
-      active
-        ? 'text-secondary-red border-b-2 border-secondary-red bg-secondary-red/5'
-        : 'text-text-light hover:text-secondary-red hover:bg-secondary-red/5'
-    }`}
   >
-    <span className="mr-2">{icon}</span>
-    {children}
+    {icon}
+    <span>{children}</span>
   </button>
 );
 
