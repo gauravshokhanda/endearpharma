@@ -20,7 +20,7 @@ export const products: Product[] = [
     uses: ["Regulates digestion", "Maintains blood sugar level", "Reduces stress"],
     dosage: "",
     sideEffects: [],
-    image: "",
+    image: "/images/daib-end.png",
     composition: "Karela 45mg, Jamun 45mg, Gudmar 25mg, Arjuna 40mg, Giloy 45mg, Vidang 40mg, Karanjava 40mg, Neem 40mg, Chiraita 45mg, Paneer Doda 45mg, Methi 25mg, Ashwagandha 45mg, Shilajit 10mg, Loh Bhasam 10mg",
     indications: ["Regulates digestion", "Maintains blood sugar level", "Reduces stress"]
   },
@@ -32,37 +32,60 @@ export const products: Product[] = [
     uses: ["Useful in cases of uncomplicated typhoid fever", "Cefixime has comparable clinical efficacy and a better adverse events profile than co-amoxiclav", "High efficacy & low incidence of side effects make it the drug of choice in RTI"],
     dosage: "",
     sideEffects: [],
-    image: "",
+    image: "/images/dearcef.png",
     composition: "Cefixime 100 mg / 200 mg",
     indications: ["Community Acquired Pneumonia", "Respiratory Tract Infection", "Pharyngitis and Tonsillitis", "Acute exacerbation of chronic bronchitis", "Urinary Tract Infections", "Typhoid Fever"]
   },
   {
     id: 3,
+    name: "Dearcef - 100 DT",
+    category: "Anti-Bacterial",
+    description: "Designed to kill bacteria. Cefixime is useful in cases of uncomplicated typhoid fever. Cefixime has comparable clinical efficacy and a better adverse events profile than co-amoxiclav. High efficacy & low incidence of side effects make it the drug of choice in RTI.",
+    uses: [
+      "Useful in cases of uncomplicated typhoid fever",
+      "Cefixime has comparable clinical efficacy and a better adverse events profile than co-amoxiclav",
+      "High efficacy & low incidence of side effects make it the drug of choice in RTI"
+    ],
+    dosage: "",
+    sideEffects: [],
+    image: "/images/DEARCEF2.png",
+    composition: "Cefixime 100 mg / 200 mg",
+    indications: [
+      "Community Acquired Pneumonia",
+      "Respiratory Tract Infection",
+      "Pharyngitis and Tonsillitis",
+      "Acute exacerbation of chronic bronchitis",
+      "Urinary Tract Infections",
+      "Typhoid Fever"
+    ]
+  },
+  {
+    id: 4,
     name: "En-D3",
     category: "Vitamin Supplement",
     description: "Cholecalciferol Solution 60000 IU Nano Shot. Nano Emulsion En-D3. Nanoemulsion Droplet Sizes as Per Pharmaceutical Standards Should be below 100 nm. Any Formulation above 100 nm Droplet size is not an Nanoemulsion? that would be a Microemulsion. VITAMIN D3 Deficiency is Recognized as Pandemic affecting all ages and Strata of population as endogenous Cutaneous System of VIT-D3 is Insufficient so Supplement Needed.",
     uses: ["Cholecalciferol Solution", "Vitamin D3 Deficiency Supplement", "Nano Emulsion Formula"],
     dosage: "",
     sideEffects: [],
-    image: "",
+    image: "/images/en-d3.png",
     composition: "Cholecalciferol 60000 IU",
     indications: ["Prediabetes/Dizbetes", "Erectile Dysfunction", "CKD Hyperpara Thyroidism", "Prevent heart attack up to 50%", "Improves product of test hormones", "Mental Health/ Depression"]
   },
   {
-    id: 4,
+    id: 5,
     name: "Endear Gold",
     category: "Sexual Health / Energy Supplement",
     description: "Each capsule contains various ingredients. Tongkat Ali has demonstrated the ability to increase libido and improve erectile function when compared to a placebo. Tongkat Ali results showed an increase in testosterone levels and muscle strength, measured by hand-grip test. As Tongkat Ali brings free testosterone levels closer to normal, it can help physically active seniors, both male & female, increase muscle strength.",
     uses: ["Brings Back lost vigour and vitality", "Increases sexual desires & makes you perform at anytime", "Helps in increasing the stamina", "Boots power to perform longer"],
     dosage: "",
     sideEffects: [],
-    image: "",
+    image: "/images/endeargold.png",
     composition: "Shatavari 100 mg, Aswagandha 100 mg, Shudh Konch Beej 20 mg, Latakasturi 10 mg, Musli Safed 20 mg, Akarkara 20 mg, Javitri 25 mg, Gokshru 30 mg, Vidarikand 45 mg, Kesar 5 mg, Makardhwaj 10 mg, Triwang Bhasam 25 mg, Loh Bhasam 30 mg, Swanwng Bhasm 25 mg, Shilajeet 35 mg, Tongkat Ali (Eurycoma longifolia) Wh.pt. 200mg",
     indications: ["Eliminates Weakness", "Boost Stamina", "Increases Testosterone", "Supports Immunity", "Speeds Muscle Recovery"]
   },
   
   {
-    id: 5,
+    id: 6,
     name: "ENDECOLD-DS",
     category: "Cold & Flu / Respiratory",
     description: "ENDECOLD-DS is a syrup containing Paracetamol for pain and fever, Phenylephrine for nasal passage and respiratory system, Chlorpheniramine Maleate as an antihistamine, and Sodium Citrate as an expectorant. It is formulated to provide relief from cold and flu symptoms.",
@@ -78,7 +101,7 @@ export const products: Product[] = [
     ],
     dosage: "Each 5ml Contains",
     sideEffects: [],
-    image: "",
+    image: "/images/endcold.png",
     composition: "Paracetamol 250mg, Phenylephrine Hcl 5mg, Chlorpheniramine Maleate 2mg, Sodium Citrate 60mg",
     indications: [
       "Seasonal Allergic Rhinitis",
@@ -90,7 +113,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: "ENDECOLD-DROP",
     category: "Cold & Flu / Respiratory",
     description: "ENDECOLD-DROP is a liquid formulation containing Paracetamol for pain and fever, Phenylephrine for nasal passage and respiratory system, and Chlorpheniramine Maleate as an antihistamine. It is designed to alleviate cold and flu symptoms.",
@@ -105,7 +128,7 @@ export const products: Product[] = [
     ],
     dosage: "Each ml Contains",
     sideEffects: [],
-    image: "",
+    image: "images/endecold.png",
     composition: "Paracetamol 125mg, Phenylephrine 2.5mg, Chlorpheniramine Maleate 1mg",
     indications: [
       "Seasonal Allergic Rhinitis",
@@ -117,7 +140,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     name: "Endeflam-S",
     category: "Pain Relief / Anti-inflammatory",
     description: "Endeflam-S is a combination tablet that offers effective relief from inflammation and musculoskeletal pain. It includes Aceclofenac for targeted anti-inflammatory action, Paracetamol for rapid pain and fever relief, and Serratiopeptidase to reduce swelling and promote tissue repair.",
@@ -128,7 +151,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Aceclofenac 100mg, Paracetamol 325mg, Serratiopeptidase 15mg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 11.10.40_bbfebbb0.jpg",
+    image: "/images/endeflame-s.png",
     composition: "Aceclofenac 100mg, Paracetamol 325mg, Serratiopeptidase 15mg",
     indications: [
       "Low Back Pain",
@@ -143,7 +166,7 @@ export const products: Product[] = [
   },
   
   {
-    id: 8,
+    id: 9,
     name: "Endeflam-TH",
     category: "Musculoskeletal / Pain Relief",
     description: "Endeflam-TH is a dual-action tablet combining Etoricoxib, a selective COX-2 inhibitor for pain relief, and Thiocolchicoside, a centrally acting muscle relaxant. This combination is effective in treating inflammatory and painful musculoskeletal conditions without affecting muscle tone.",
@@ -155,7 +178,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Etoricoxib 60mg, Thiocolchicoside 4mg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 11.23.42_3203591b.jpg",
+    image: "/images/Endeflam (2).png",
     composition: "Etoricoxib 60mg, Thiocolchicoside 4mg",
     indications: [
       "Muscle Spasm",
@@ -169,7 +192,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 9,
+    id: 10,
     name: "Endexim-O",
     category: "Anti-Bacterial / Antibiotic",
     description: "Endexim-O is a combination antibiotic tablet containing Cefpodoxime and Ofloxacin. It is designed to treat a wide range of bacterial infections by targeting both gram-positive and gram-negative bacteria, offering superior tissue penetration and bactericidal activity.",
@@ -183,7 +206,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Cefpodoxime 200mg, Ofloxacin 200mg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 11.53.41_9876f67b.jpg",
+    image: "/images/ede-o.png",
     composition: "Cefpodoxime 200mg, Ofloxacin 200mg",
     indications: [
       "Tonsillitis",
@@ -206,7 +229,7 @@ export const products: Product[] = [
     ],
     dosage: "Tablets",
     sideEffects: [],
-    image: "",
+    image: "/images/enzocort.png",
     composition: "Deflazacort 6mg",
     indications: [
       "Rheumatoid Arthritis",
@@ -219,7 +242,7 @@ export const products: Product[] = [
   },
   {
     id: 12,
-    name: "Fertidear Syrup",
+    name: "Feritidear Syrup",
     category: "Maternity / Fertility",
     description: "Fertidear Syrup is formulated to restore the joy of maternity, containing various herbal extracts to support female reproductive health and fertility.",
     uses: [
@@ -233,7 +256,7 @@ export const products: Product[] = [
     ],
     dosage: "Each 10ml contains",
     sideEffects: [],
-    image: "",
+    image: "/images/Feritidear.png",
     composition: "Chaste berry Ext. 200mg, Red Rasberry Ext. 200mg, Aloera Ext 200mg, Punarnava Ext. 200mg, Tribulus Ext. 200mg, Rohdiola Rosea Ext. 200mg, Ashoka Ext. 500mg, Shatvari Ext. 500mg, Lodhra Ext 500mg, Dashmool Ext. 500mg, Triphala Ext. 200mg, Vat Twak Ext. 200mg, Nagar Motha Ext. 200mg, Aswagandha Ext. 200mg, Jatamanshi Ext. 200mg, Methidana Ext. 100mg, Jeevanti Ext. 200mg, Guduchi Ext. 200mg, Ulat Kambal Ext. 200mg, Daruharidra Ext. 200mg, Indrayan Beej Ext. 200mg | 10 ml",
     indications: [
       "Amenorrhea",
@@ -286,7 +309,7 @@ export const products: Product[] = [
     ],
     dosage: "10 ml. SYRUP",
     sideEffects: [],
-    image: "",
+    image: "/images/fightodear.png",
     composition: "Papaya Leaf Ext. 1500mg, Wheat Germ Ext. 500mg, Aswagandha Etc. 250mg, Giloy Ext. 500mg, Tulsi Patra Ext. 250mg, Chiraya Ext. 250mg, Daruhaldi Ext. 250mg, Goat Milk Ext. 500mg, Karanjana Ext. 250mg, Mulhati Ext. 250mg, Ginger Ext. 250mg, Kiviphal Ext. 200mg, Lehberry Ext. 200mg",
     indications: [
       "Viral Fever",
@@ -308,7 +331,7 @@ export const products: Product[] = [
     ],
     dosage: "Each 5ml contains: Granisetron 1mg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 14.55.15_c3502a50.jpg",
+    image: "/images/granidear.png",
     composition: "Granisetron 1mg per 5ml",
     indications: [
       "Chemotherapy induced nausea and vomiting",
@@ -331,7 +354,7 @@ export const products: Product[] = [
     ],
     dosage: "Syrup - Sugar Free; each dose contains herbal extracts with Mandur Bhasma, Swarn Makshik Bhasma, and Kashish Bhasma",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 15.07.57_d0f1ad36.jpg",
+    image: "/images/hepdear ds syrup.png",
     composition: "Mandur Bhasma, Swarn Makshik Bhasma, Kashish Bhasma with 24 herbal extracts",
     indications: [
       "Liver Disorders",
@@ -358,7 +381,7 @@ export const products: Product[] = [
     ],
     dosage: "Syrup - Sugar Free; contains Aloe Vera, Silymarin, Mandur Bhasma, Swarn Makshik Bhasma, Kashish Bhasma, and 24 herbal extracts",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 15.35.27_157dfddb.jpg",
+    image: "/images/hepdearplus.png", 
     composition: "Aloe Vera, Silymarin, Mandur Bhasma, Swarn Makshik Bhasma, Kashish Bhasma, 24 herbal ingredients",
     indications: [
       "Cirrhosis",
@@ -382,7 +405,7 @@ export const products: Product[] = [
     ],
     dosage: "Each 5ml contains: Ferrous Ascorbate 30mg, Folic Acid 1.5mg, Methylcobalamin 750mcg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 15.45.11_f372a7a8.jpg",
+    image: "/images/iro aid.webp",
     composition: "Ferrous Ascorbate 30mg, Folic Acid 1.5mg, Methylcobalamin 750mcg",
     indications: [
       "Iron Deficiency Anaemia",
@@ -407,7 +430,7 @@ export const products: Product[] = [
     ],
     dosage: "Soap with Ketoconazole 2% and Cetrimide 0.5%",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 15.51.49_8e4bac3c.jpg",
+    image: "/images/ketodear plus.png",
     composition: "Ketoconazole 2%, Cetrimide 0.5%",
     indications: [
       "Skin Cleansing",
@@ -432,7 +455,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Ketoconazole 200mg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 15.57.02_f827bbe5.jpg",
+    image: "/images/ketodear-200.png",
     composition: "Ketoconazole 200mg",
     indications: [
       "Histoplasmosis",
@@ -463,7 +486,7 @@ export const products: Product[] = [
     ],
     dosage: "Herbal honey-based syrup with key ingredients: Honey, Amaltas, Tulsi, Mulethi, Vasaka, Kanthkar",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 15.59.14_fd3af2cb.jpg",
+    image: "/images/kufdearsyrup1.png",
     composition: "Honey, Amaltas, Tulsi, Mulethi, Vasaka, Kanthkar",
     indications: [
       "Dry or Productive Cough",
@@ -489,13 +512,13 @@ export const products: Product[] = [
     ],
     dosage: "Each 5ml contains: Levosalbutamol Sulphate 1mg, Ambroxol HCl 30mg, Guaiphenesin 50mg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 16.03.50_3cd27316.jpg",
+    image: "/images/kudear.png",
     composition: "Levosalbutamol Sulphate 1mg, Ambroxol HCl 30mg, Guaiphenesin 50mg",
     indications: [
       "Asthma",
       "Chronic Obstructive Pulmonary Disease",
       "Productive Cough",
-      "Co-prescription in RTIs"
+      "Co-prescription in RTIs" 
     ]
   },
 
@@ -512,7 +535,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Acebrophylline 200mg, Fexofenadine 120mg, Montelukast 10mg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 16.05.56_afab9da6.jpg",
+    image: "/images/montedear-af.png",
     composition: "Acebrophylline 200mg, Fexofenadine 120mg, Montelukast 10mg",
     indications: [
       "Bronchial Asthma",
@@ -534,7 +557,7 @@ export const products: Product[] = [
     ],
     dosage: "Tablet: Levocetirizine 5mg + Montelukast 10mg; Syrup: Levocetirizine 2.5mg + Montelukast 4mg/5ml",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 17.20.11_1f3c8c38.jpg",
+    image: "/images/montedear-l.png",
     composition: "Levocetirizine 5mg + Montelukast 10mg (Tablet), Levocetirizine 2.5mg + Montelukast 4mg/5ml (Syrup)",
     indications: [
       "Allergic Bronchitis",
@@ -560,15 +583,15 @@ export const products: Product[] = [
       "L-Arginine: Helps blood pressure, treats ED, and improves vascular health",
       "Astaxanthin: Powerful antioxidant that reduces inflammation and oxidative stress"
     ],
-    dosage: "Sachet formulation; 1 daily or as prescribed",
+    dosage: "Sachet formulation; 1 daily or as prescribed",   
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 17.24.51_b1516f13.jpg",
+    image: "/images/nurosachet.png",
     composition: "CoQ10 200mg, Myo-Inositol 1000mg, D-Chiro Inositol 25mg, L-Carnitine 1000mg, L-Methyl Folate 15mg, Lycopene 8000mcg, Vitamin D3 1000 IU, Vitamin B9, Omega 3 (EPA 180mg, DHA 120mg), L-Arginine 2000mg, Astaxanthin 2mg",
     indications: [
       "Male and Female Fertility Support",
       "Sperm Motility & Morphology Improvement",
       "PCOS & Ovulatory Health",
-      "Folate Deficiency Prevention",
+      "Folate Deficiency Prevention",  
       "Metabolic Syndrome",
       "Cardiovascular & Antioxidant Protection",
       "Pregnancy Brain Development Support",
@@ -592,7 +615,7 @@ export const products: Product[] = [
     ],
     dosage: "1 sachet daily or as advised by your healthcare provider",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 17.32.58_95e71962.jpg",
+    image: "/images/nurodear-lc (general wellness).png",
     composition: "CoQ10 200mg, Myo-Inositol 1000mg, D-Chiro Inositol 25mg, L-Carnitine 1000mg, L-Methyl Folate 15mg, Lycopene 8000mcg, Vitamin D3 1000 IU, EPA 180mg, DHA 120mg, L-Arginine 2000mg, Astaxanthin 2mg",
     indications: [
       "Metabolic Syndrome",
@@ -618,7 +641,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Nortriptyline HCL 10mg + Pregabalin 75mg + Methylcobalamin 1500mcg",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 17.41.12_3baa9b74.jpg",
+    image: "/images/nurdearNT.png",
     composition: "Nortriptyline HCL 10mg, Pregabalin 75mg, Methylcobalamin 1500mcg",
     indications: [
       "Epilepsy",
@@ -648,7 +671,7 @@ export const products: Product[] = [
     ],
     dosage: "1 sachet daily or as directed by the physician",
     sideEffects: [],
-    image: "/mnt/data/WhatsApp Image 2025-06-17 at 17.42.46_4f066ebc.jpg",
+    image: "/images/orthodear.png",
     composition: "Glucosamine HCl 1000mg, Chondroitin 600mg, MSM 1000mg, Roship Extract 2000mg, Boswellia 150mg, Dioscorea Deltoidea 50mg, Cissus Quadrangularis 100mg, Ascorbic Acid 50mg, Curcumin 100mg, Piperine 5mg, Hyaluronic Acid 10mg",
     indications: [
       "Osteoarthritis",
@@ -675,7 +698,7 @@ export const products: Product[] = [
     ],
     dosage: "Pantoprazole 40mg + Domperidone 30mg SR | Capsules",
     sideEffects: [],
-    image: "",
+    image: "/images/pentodear.png",
     composition: "Pantoprazole 40mg, Domperidone 30mg SR",
     indications: [
       "Acid Reflux",

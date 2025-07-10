@@ -79,7 +79,7 @@ const ProductDetailPage: React.FC = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto max-h-[400px] object-contain bg-white mx-auto"
             />
           </div>
 
