@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getOptimizedImagePath, preloadImage } from '../utils/imageUtils';
 
 interface HeroProps {
   title: string;
@@ -27,13 +28,34 @@ const Hero: React.FC<HeroProps> = ({
 
   const textContainerClasses = `relative z-10 container mx-auto px-4 py-16 md:py-24 flex flex-col ${alignmentClasses[alignment]}`;
 
+  // Preload the image when component mounts
+  useEffect(() => {
+    if (imageSrc) {
+      preloadImage(imageSrc);
+    }
+  }, [imageSrc]);
+
+  // Get optimized image path
+  const optimizedImageSrc = getOptimizedImagePath(imageSrc);
+
   return (
     <div className="relative w-full bg-gradient-to-r from-secondary-red/10 to-secondary-yellow/10 overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${imageSrc})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center">
+        {/* Preload the image */}
+        <link rel="preload" as="image" href={optimizedImageSrc} />
+        
+        {/* Use a div with background image for better performance */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
+          style={{ 
+            backgroundImage: `url(${optimizedImageSrc})`,
+            backgroundSize: 'cover',
+            opacity: 1,
+          }}
+        />
+        
+        {/* Overlay */}
         <div className="absolute inset-0 bg-gray-900/30"></div>
       </div>
 

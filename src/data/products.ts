@@ -128,7 +128,7 @@ export const products: Product[] = [
     ],
     dosage: "Each ml Contains",
     sideEffects: [],
-    image: "images/endecold.png",
+    image: "/images/endecold.png",
     composition: "Paracetamol 125mg, Phenylephrine 2.5mg, Chlorpheniramine Maleate 1mg",
     indications: [
       "Seasonal Allergic Rhinitis",
@@ -283,7 +283,7 @@ export const products: Product[] = [
     ],
     dosage: "Tablet",
     sideEffects: [],
-    image: "",
+    image: "/images/fertidear-tablet.png",
     composition: "Chasete Berry (Vitex) Ext. 100mg, False Unicorn Ext. 100mg, Re Clover Ext. 100mg, Shatavari Ext. 100mg, Tribullus Ext. 100mg, Shila Sindor 50mg, Dalchini Ext. 50mg, Mulheti Ext. 50mg, Kachnar Guggul 100mg, Shivlighi Seeds Ext. 100mg, Putrajeevak Ext. 100mg",
     indications: [
       "Amenorrhea",
@@ -354,7 +354,7 @@ export const products: Product[] = [
     ],
     dosage: "Syrup - Sugar Free; each dose contains herbal extracts with Mandur Bhasma, Swarn Makshik Bhasma, and Kashish Bhasma",
     sideEffects: [],
-    image: "/images/hepdear ds syrup.png",
+    image: "/images/hepdear-ds-syrup.png",
     composition: "Mandur Bhasma, Swarn Makshik Bhasma, Kashish Bhasma with 24 herbal extracts",
     indications: [
       "Liver Disorders",
@@ -405,7 +405,7 @@ export const products: Product[] = [
     ],
     dosage: "Each 5ml contains: Ferrous Ascorbate 30mg, Folic Acid 1.5mg, Methylcobalamin 750mcg",
     sideEffects: [],
-    image: "/images/iro aid.webp",
+    image: "/images/iro-aid.webp",
     composition: "Ferrous Ascorbate 30mg, Folic Acid 1.5mg, Methylcobalamin 750mcg",
     indications: [
       "Iron Deficiency Anaemia",
@@ -430,7 +430,7 @@ export const products: Product[] = [
     ],
     dosage: "Soap with Ketoconazole 2% and Cetrimide 0.5%",
     sideEffects: [],
-    image: "/images/ketodear plus.png",
+    image: "/images/ketodear-plus.png",
     composition: "Ketoconazole 2%, Cetrimide 0.5%",
     indications: [
       "Skin Cleansing",
@@ -615,7 +615,7 @@ export const products: Product[] = [
     ],
     dosage: "1 sachet daily or as advised by your healthcare provider",
     sideEffects: [],
-    image: "/images/nurodear-lc (general wellness).png",
+    image: "/images/nurodear-lc-general-wellness.png",
     composition: "CoQ10 200mg, Myo-Inositol 1000mg, D-Chiro Inositol 25mg, L-Carnitine 1000mg, L-Methyl Folate 15mg, Lycopene 8000mcg, Vitamin D3 1000 IU, EPA 180mg, DHA 120mg, L-Arginine 2000mg, Astaxanthin 2mg",
     indications: [
       "Metabolic Syndrome",
@@ -711,4 +711,4 @@ export const products: Product[] = [
       "GERD"
     ]
   }
-]; 
+];

@@ -1,5 +1,6 @@
 import React from 'react';
 import { TeamMember } from '../data/team';
+import OptimizedImage from './OptimizedImage';
 
 interface TeamMemberCardProps {
   member: TeamMember;
@@ -9,10 +10,12 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden group">
       <div className="h-64 overflow-hidden">
-        <img 
+        <OptimizedImage 
           src={member.image} 
           alt={member.name} 
-          className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full transition-transform duration-300 group-hover:scale-105"
+          objectFit="cover"
+          placeholder="blur"
         />
       </div>
       <div className="p-5">

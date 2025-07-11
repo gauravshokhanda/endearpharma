@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Product } from '../data/products';
+import OptimizedImage from './OptimizedImage';
 
 interface ProductCardProps {
   product: Product;
@@ -11,10 +12,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="h-48 overflow-hidden">
-        <img 
+        <OptimizedImage 
           src={product.image} 
           alt={product.name} 
-          className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+          className="w-full h-full transition-transform duration-300 hover:scale-105"
+          objectFit="contain"
         />
       </div>
       <div className="p-5">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { products, Product } from '../data/products';
 import { ArrowLeft, AlertCircle as CircleAlert, Pill, List, ChevronRight } from 'lucide-react';
+import OptimizedImage from '../components/OptimizedImage';
 
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -76,10 +77,13 @@ const ProductDetailPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* Product Image */}
           <div className="rounded-lg overflow-hidden shadow-md">
-            <img
+            <OptimizedImage
               src={product.image}
               alt={product.name}
-              className="w-full h-auto max-h-[400px] object-contain bg-white mx-auto"
+              className="w-full h-auto max-h-[400px] bg-white mx-auto"
+              objectFit="contain"
+              priority={true}
+              height={400}
             />
           </div>
 
