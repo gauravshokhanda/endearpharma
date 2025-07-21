@@ -13,9 +13,31 @@ export const getOptimizedImagePath = (src: string): string => {
     return src;
   }
 
+  // Special case handling for known problematic images
+  if (src.includes('neurosachet.png')) {
+    console.log('imageUtils: Optimizing neurosachet.png path');
+    return '/images/neurosachet.png';
+  }
+  
+  // Special case for montedear.png
+  if (src.includes('montedear.png')) {
+    console.log('imageUtils: Optimizing montedear.png path');
+    return '/images/montedear.png';
+  }
+
   // If it's already a WebP image, return as is
   if (src.toLowerCase().endsWith('.webp')) {
     return src;
+  }
+
+  // Handle case where path has no extension
+  if (!src.includes('.')) {
+    // Try WebP first if browser supports it
+    if (typeof window !== 'undefined' && 'HTMLPictureElement' in window) {
+      return `${src}.webp`;
+    }
+    // Otherwise default to PNG
+    return `${src}.png`;
   }
 
   // For local images, try to use WebP version if browser supports it

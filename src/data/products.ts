@@ -12,7 +12,7 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  {
+  { 
     id: 1,
     name: "Daib-end",
     category: "Diabetes Management",
@@ -283,7 +283,7 @@ export const products: Product[] = [
     ],
     dosage: "Tablet",
     sideEffects: [],
-    image: "/images/fertidear-tablet.png",
+    image: "/images/fertidear tablet.png",
     composition: "Chasete Berry (Vitex) Ext. 100mg, False Unicorn Ext. 100mg, Re Clover Ext. 100mg, Shatavari Ext. 100mg, Tribullus Ext. 100mg, Shila Sindor 50mg, Dalchini Ext. 50mg, Mulheti Ext. 50mg, Kachnar Guggul 100mg, Shivlighi Seeds Ext. 100mg, Putrajeevak Ext. 100mg",
     indications: [
       "Amenorrhea",
@@ -455,7 +455,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Ketoconazole 200mg",
     sideEffects: [],
-    image: "/images/ketodear-200.png",
+    image: "/images/ketdear.webp",
     composition: "Ketoconazole 200mg",
     indications: [
       "Histoplasmosis",
@@ -535,7 +535,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Acebrophylline 200mg, Fexofenadine 120mg, Montelukast 10mg",
     sideEffects: [],
-    image: "/images/montedear-af.png",
+    image: "/images/motedearl.png",
     composition: "Acebrophylline 200mg, Fexofenadine 120mg, Montelukast 10mg",
     indications: [
       "Bronchial Asthma",
@@ -557,7 +557,7 @@ export const products: Product[] = [
     ],
     dosage: "Tablet: Levocetirizine 5mg + Montelukast 10mg; Syrup: Levocetirizine 2.5mg + Montelukast 4mg/5ml",
     sideEffects: [],
-    image: "/images/montedear-l.png",
+    image: "/images/montedear.png",
     composition: "Levocetirizine 5mg + Montelukast 10mg (Tablet), Levocetirizine 2.5mg + Montelukast 4mg/5ml (Syrup)",
     indications: [
       "Allergic Bronchitis",
@@ -585,7 +585,7 @@ export const products: Product[] = [
     ],
     dosage: "Sachet formulation; 1 daily or as prescribed",   
     sideEffects: [],
-    image: "/images/nurosachet.png",
+    image: "/images/neurosachet.png",
     composition: "CoQ10 200mg, Myo-Inositol 1000mg, D-Chiro Inositol 25mg, L-Carnitine 1000mg, L-Methyl Folate 15mg, Lycopene 8000mcg, Vitamin D3 1000 IU, Vitamin B9, Omega 3 (EPA 180mg, DHA 120mg), L-Arginine 2000mg, Astaxanthin 2mg",
     indications: [
       "Male and Female Fertility Support",
@@ -615,7 +615,7 @@ export const products: Product[] = [
     ],
     dosage: "1 sachet daily or as advised by your healthcare provider",
     sideEffects: [],
-    image: "/images/nurodear-lc-general-wellness.png",
+    image: "/images/neurosachet.png",
     composition: "CoQ10 200mg, Myo-Inositol 1000mg, D-Chiro Inositol 25mg, L-Carnitine 1000mg, L-Methyl Folate 15mg, Lycopene 8000mcg, Vitamin D3 1000 IU, EPA 180mg, DHA 120mg, L-Arginine 2000mg, Astaxanthin 2mg",
     indications: [
       "Metabolic Syndrome",
@@ -641,7 +641,7 @@ export const products: Product[] = [
     ],
     dosage: "Each tablet contains: Nortriptyline HCL 10mg + Pregabalin 75mg + Methylcobalamin 1500mcg",
     sideEffects: [],
-    image: "/images/nurdearNT.png",
+    image: "/images/nurdearNT.webp",
     composition: "Nortriptyline HCL 10mg, Pregabalin 75mg, Methylcobalamin 1500mcg",
     indications: [
       "Epilepsy",
