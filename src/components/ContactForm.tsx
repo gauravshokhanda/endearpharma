@@ -1,5 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Send } from 'lucide-react';
+import emailjs from 'emailjs-com';
+
+const SERVICE_ID = 'service_swc93fo';
+const TEMPLATE_ID = 'template_dauaplv';
+const PUBLIC_KEY = 'rGvraZ2wmQPOjNF82';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -8,9 +13,10 @@ const ContactForm: React.FC = () => {
     subject: '',
     message: ''
   });
-  
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -20,31 +26,44 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+    setError('');
+
+    if (!formRef.current) return;
+
+    // Map form fields to EmailJS template variables
+    const emailParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, emailParams, PUBLIC_KEY)
+      .then(() => {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      })
+      .catch(() => {
+        setIsSubmitting(false);
+        setError('Failed to send message. Please try again.');
       });
-      
-      // Reset submission status after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 1500);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
       {isSubmitted ? (
         <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-md">
           Thank you for your message. We'll get back to you soon!
         </div>
       ) : (
         <>
+          {error && (
+            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
+              {error}
+            </div>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-text-dark mb-1">
@@ -77,7 +96,6 @@ const ContactForm: React.FC = () => {
               />
             </div>
           </div>
-          
           <div>
             <label htmlFor="subject" className="block text-sm font-medium text-text-dark mb-1">
               Subject
@@ -98,7 +116,6 @@ const ContactForm: React.FC = () => {
               <option value="Other">Other</option>
             </select>
           </div>
-          
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-text-dark mb-1">
               Your Message
@@ -114,7 +131,6 @@ const ContactForm: React.FC = () => {
               placeholder="Please describe your query in detail..."
             ></textarea>
           </div>
-          
           <button
             type="submit"
             disabled={isSubmitting}

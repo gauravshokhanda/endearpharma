@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-text-dark mb-4">Why Choose MediCure</h2>
+            <h2 className="text-3xl font-bold text-text-dark mb-4">Why Choose Endearpharma</h2>
             <p className="text-text-light max-w-2xl mx-auto">
               We are committed to excellence in pharmaceutical research, development, and manufacturing to provide you with the highest quality healthcare products.
             </p>
@@ -115,7 +115,7 @@ const HomePage: React.FC = () => {
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
                   src="https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg" 
-                  alt="About MediCure Pharmaceuticals" 
+                  alt="About Endearpharma" 
                   className="w-full h-auto"
                 />
               </div>
