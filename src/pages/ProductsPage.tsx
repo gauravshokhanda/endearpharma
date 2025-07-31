@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import { Search, Filter } from 'lucide-react';
+import Hero from '../components/Hero';
 
 const ProductsPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -54,14 +55,18 @@ const ProductsPage: React.FC = () => {
   }, [categoryParam]);
 
   return (
-    <div className="pt-24 pb-16">
-      <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-text-dark mb-4">Our Products</h1>
-          <p className="text-text-light max-w-2xl mx-auto">
-            Explore our range of high-quality pharmaceutical products designed to improve health outcomes and enhance well-being.
-          </p>
-        </div>
+    <div>
+      {/* Hero Section */}
+      <Hero
+        title="Our Products"
+        subtitle="Explore our range of high-quality pharmaceutical products designed to improve health outcomes and enhance well-being."
+        imageSrc="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg"
+        alignment="center"
+      />
+
+      {/* Products Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
 
         {/* Search and Filter */}
         <div className="mb-8 bg-white rounded-lg shadow-sm p-5">
@@ -110,7 +115,8 @@ const ProductsPage: React.FC = () => {
             <p className="text-text-light">Try changing your search term or filter.</p>
           </div>
         )}
-      </div>
+        </div>
+      </section>
     </div>
   );
 };

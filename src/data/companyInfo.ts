@@ -1,5 +1,5 @@
 export const companyInfo = {
-  name: "Endear Pharmaceuticals",
+  name: "Endearpharma",
   tagline: "Quality medicines for a healthier tomorrow",
   founded: 2005,
   headquarters: "San Francisco, California",
@@ -24,12 +24,12 @@ export const companyInfo = {
         description: "We believe everyone deserves access to effective medicines, and we work to make our products available and affordable."
       }
     ],
-    story: "Endear Pharmaceuticals was founded in 2005 by a group of researchers committed to creating affordable, effective medications. What began as a small research laboratory has grown into a respected pharmaceutical company with a diverse product portfolio. Our journey has been guided by our dedication to scientific excellence and our passion for improving human health. Today, we continue to innovate and expand our reach, bringing quality medicines to patients around the world."
+    story: "Endearpharma was founded in 2005 by a group of researchers committed to creating affordable, effective medications. What began as a small research laboratory has grown into a respected pharmaceutical company with a diverse product portfolio. Our journey has been guided by our dedication to scientific excellence and our passion for improving human health. Today, we continue to innovate and expand our reach, bringing quality medicines to patients around the world."
   },
   contact: {
     email: "info@endear-pharma.com",
-    phone: "+1 (555) 123-4567",
-    address: "123 Health Avenue, San Francisco, CA 94107",
+    phone: "095574 88004",
+    address: "BHEL Township, Salempur Mahdood, Haridwar, Uttarakhand 249402",
     hours: "Monday - Friday: 9:00 AM - 5:00 PM"
   },
   socialMedia: {

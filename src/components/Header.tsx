@@ -31,8 +31,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <Pill size={32} className="text-secondary-red" />
-          <span className="font-bold text-xl text-text-dark">Endear</span>
+          <img src="/images/ENDEAR.png" alt="Endearpharma Logo" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -40,7 +39,7 @@ const Header: React.FC = () => {
           <NavLink to="/" isActive={isActive('/')}>Home</NavLink>
           <NavLink to="/products" isActive={isActive('/products')}>Products</NavLink>
           <NavLink to="/about" isActive={isActive('/about')}>About</NavLink>
-          <NavLink to="/team" isActive={isActive('/team')}>Our Team</NavLink>
+
           <NavLink to="/contact" isActive={isActive('/contact')}>Contact</NavLink>
         </nav>
 
@@ -65,7 +64,7 @@ const Header: React.FC = () => {
             <MobileNavLink to="/" isActive={isActive('/')}>Home</MobileNavLink>
             <MobileNavLink to="/products" isActive={isActive('/products')}>Products</MobileNavLink>
             <MobileNavLink to="/about" isActive={isActive('/about')}>About</MobileNavLink>
-            <MobileNavLink to="/team" isActive={isActive('/team')}>Our Team</MobileNavLink>
+
             <MobileNavLink to="/contact" isActive={isActive('/contact')}>Contact</MobileNavLink>
           </nav>
         </div>

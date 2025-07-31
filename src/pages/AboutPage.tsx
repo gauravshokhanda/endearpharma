@@ -8,9 +8,9 @@ const AboutPage: React.FC = () => {
     <div>
       {/* Hero Section */}
       <Hero
-        title="About MediCure Pharmaceuticals"
+        title="About Endearpharma"
         subtitle="Discover our story, mission, and the values that drive our commitment to healthcare excellence."
-        imageSrc="https://images.pexels.com/photos/3846901/pexels-photo-3846901.jpeg"
+        imageSrc="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg"
         alignment="center"
       />
 
@@ -24,13 +24,13 @@ const AboutPage: React.FC = () => {
               <p className="text-text-light mb-6">
                 {companyInfo.about.story}
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="grid grid-cols-1 gap-4">
+                {/* <div className="bg-gray-50 p-4 rounded-lg">
                   <div className="font-bold text-2xl text-secondary-red">{companyInfo.founded}</div>
                   <div className="text-text-light text-sm">Year Founded</div>
-                </div>
+                </div> */}
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="font-bold text-2xl text-secondary-red">15+</div>
+                  <div className="font-bold text-2xl text-secondary-red">25+</div>
                   <div className="text-text-light text-sm">Medicines</div>
                 </div>
               </div>
@@ -38,7 +38,7 @@ const AboutPage: React.FC = () => {
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg" 
-                alt="MediCure Pharmaceuticals history" 
+                alt=" Endeaepharma history" 
                 className="w-full h-auto"
               />
             </div>
@@ -109,7 +109,7 @@ const AboutPage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-text-dark mb-4">Why Choose Us</h2>
             <p className="text-text-light max-w-2xl mx-auto">
-              MediCure stands out in the pharmaceutical industry for several key reasons.
+              Endearpharma stands out in the pharmaceutical industry for several key reasons.
             </p>
           </div>
 

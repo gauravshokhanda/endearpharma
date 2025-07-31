@@ -11,7 +11,7 @@ const ContactPage: React.FC = () => {
       <Hero
         title="Contact Us"
         subtitle="We're here to answer your questions and provide the support you need"
-        imageSrc="https://images.pexels.com/photos/7163953/pexels-photo-7163953.jpeg"
+        imageSrc="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg"
         alignment="center"
       />
 
@@ -97,7 +97,7 @@ const ContactPage: React.FC = () => {
             />
             
             <FaqItem 
-              question="How can I become a distributor for MediCure products?"
+              question="How can I become a distributor for Endearpharma products?"
               answer="We're always looking for distribution partners. Please send us your business details and distribution proposal through our contact form, and our business development team will get back to you."
             />
             

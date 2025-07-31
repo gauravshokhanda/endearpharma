@@ -11,7 +11,7 @@ export const teamMembers: TeamMember[] = [
     id: 1,
     name: "Dr. Sarah Chen",
     role: "Chief Executive Officer",
-    bio: "Dr. Chen has over 20 years of experience in the pharmaceutical industry. She holds a Ph.D. in Pharmacology from Stanford University and has led the development of several breakthrough medications. Under her leadership, MediCure has expanded its product line and international presence significantly.",
+    bio: "Dr. Chen has over 20 years of experience in the pharmaceutical industry. She holds a Ph.D. in Pharmacology from Stanford University and has led the development of several breakthrough medications. Under her leadership, Endearpharma has expanded its product line and international presence significantly.",
     image: "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg"
   },
   {
@@ -46,7 +46,7 @@ export const teamMembers: TeamMember[] = [
     id: 6,
     name: "Robert Chen",
     role: "Marketing Director",
-    bio: "Robert leads our marketing initiatives with creativity and strategic thinking. His innovative campaigns have significantly increased brand awareness and market share for MediCure products over the past five years.",
+    bio: "Robert leads our marketing initiatives with creativity and strategic thinking. His innovative campaigns have significantly increased brand awareness and market share for Endearpharma products over the past five years.",
     image: "https://images.pexels.com/photos/5490276/pexels-photo-5490276.jpeg"
   }
 ];

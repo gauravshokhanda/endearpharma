@@ -9,12 +9,11 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-50 pt-12 pb-6">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Pill size={28} className="text-secondary-red" />
-              <span className="font-bold text-xl text-text-dark">Endear</span>
+              <img src="/images/ENDEAR.png" alt="Endearpharma Logo" className="h-10 w-auto" />
             </div>
             <p className="text-text-light mb-4 text-sm">
               {companyInfo.tagline}
@@ -48,36 +47,14 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/about" className="text-text-light hover:text-secondary-red transition-colors text-sm">About Us</Link>
               </li>
-              <li>
-                <Link to="/team" className="text-text-light hover:text-secondary-red transition-colors text-sm">Our Team</Link>
-              </li>
+
               <li>
                 <Link to="/contact" className="text-text-light hover:text-secondary-red transition-colors text-sm">Contact Us</Link>
               </li>
             </ul>
           </div>
 
-          {/* Product Categories */}
-          <div>
-            <h3 className="font-semibold text-text-dark mb-4 text-lg">Categories</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/products?category=Pain Management" className="text-text-light hover:text-secondary-red transition-colors text-sm">Pain Management</Link>
-              </li>
-              <li>
-                <Link to="/products?category=Respiratory" className="text-text-light hover:text-secondary-red transition-colors text-sm">Respiratory</Link>
-              </li>
-              <li>
-                <Link to="/products?category=Cardiovascular" className="text-text-light hover:text-secondary-red transition-colors text-sm">Cardiovascular</Link>
-              </li>
-              <li>
-                <Link to="/products?category=Immunity" className="text-text-light hover:text-secondary-red transition-colors text-sm">Immunity</Link>
-              </li>
-              <li>
-                <Link to="/products?category=Mental Health" className="text-text-light hover:text-secondary-red transition-colors text-sm">Mental Health</Link>
-              </li>
-            </ul>
-          </div>
+
 
           {/* Contact Information */}
           <div>
