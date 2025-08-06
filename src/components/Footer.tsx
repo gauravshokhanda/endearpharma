@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/images/ENDEAR.png" alt="Endearpharma Logo" className="h-10 w-auto" />
+              <img src="/images/FIN.webp" alt="Endearpharma Logo" className="h-16 w-auto" />
             </div>
             <p className="text-text-light mb-4 text-sm">
               {companyInfo.tagline}

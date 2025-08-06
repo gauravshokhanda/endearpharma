@@ -138,42 +138,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Leadership Preview */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-text-dark mb-4">Our Leadership Team</h2>
-            <p className="text-text-light max-w-2xl mx-auto">
-              Meet the experienced professionals who guide our company's vision and strategy.
-            </p>
-          </div>
 
-          <div className="flex justify-center mb-8">
-            <div className="rounded-full overflow-hidden h-40 w-40 border-4 border-white shadow-lg">
-              <img 
-                src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg" 
-                alt="CEO" 
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-xl font-semibold text-text-dark mb-1">Dr. Sarah Chen</h3>
-            <p className="text-secondary-red font-medium mb-4">Chief Executive Officer</p>
-            <p className="text-text-light mb-6">
-              Dr. Chen has over 20 years of experience in the pharmaceutical industry. She holds a Ph.D. in Pharmacology from Stanford University and has led the development of several breakthrough medications.
-            </p>
-            <a 
-              href="/team" 
-              className="inline-flex items-center px-6 py-3 bg-secondary-red text-white rounded-md hover:bg-secondary-red/90 transition-colors"
-            >
-              <Users size={18} className="mr-2" />
-              Meet Our Full Team
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

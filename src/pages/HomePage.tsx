@@ -7,7 +7,12 @@ import { products } from '../data/products';
 import { companyInfo } from '../data/companyInfo';
 
 const HomePage: React.FC = () => {
-  const featuredProducts = products.slice(0, 3);
+  // Explicitly select featured products by name
+  const featuredProducts = products.filter(p => [
+    "Nurodear-LC",
+    "Hepdear S",
+    "Uridear-KM"
+  ].includes(p.name));
 
   return (
     <div>
@@ -20,7 +25,7 @@ const HomePage: React.FC = () => {
         imageSrc="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg"
       />
 
-      {/* Features Section */}
+      {/* Features Section */}      
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">

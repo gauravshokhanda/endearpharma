@@ -242,7 +242,7 @@ export const products: Product[] = [
   },
   {
     id: 12,
-    name: "Feritidear Syrup",
+    name: "Fertidear Syrup",
     category: "Maternity / Fertility",
     description: "Fertidear Syrup is formulated to restore the joy of maternity, containing various herbal extracts to support female reproductive health and fertility.",
     uses: [
@@ -709,6 +709,44 @@ export const products: Product[] = [
       "Reflux Oesophagitis",
       "Nausea & Vomiting",
       "GERD"
+    ]
+  },
+
+  {
+    id: 716,
+    name: "Hepdear S",
+    category: "Liver Care",
+    description: "Hepdear S is a new sugar-free liver syrup for comprehensive liver support.",
+    uses: ["Supports liver function", "Sugar-free formula"],
+    dosage: "As directed by physician",
+    sideEffects: [],
+
+    image: "/images/hepdear-s.webp", 
+    composition: "See pack for details",
+    indications: ["Liver disorders", "General liver support"]
+  },
+  {
+    id: 717,
+    name: "Uridear-KM",
+    category: "Kidney Care",
+    description: "Uridear-KM is a comprehensive syrup containing Cranberry Extract, Potassium Magnesium Citrate, D-Mannose, and Hibiscus Extract for urinary tract health.",
+    uses: [
+      "Prevention and treatment of urinary tract infections (UTIs)",
+      "Alkalinize the urine to enhance effect of natural products",
+      "Prevent bacteria from adhering to bladder and urethra wall",
+      "Prevent bacteria from attaching to urinary tract and bladder lining"
+    ],
+    dosage: "As directed by physician",
+    sideEffects: [],
+    image: "/images/neurokm.webp",
+    composition: "Cranberry Extract 300mg + Potassium Magnesium Citrate 978mg + D-Mannose 300mg + Hibiscus Extract 200mg",
+    indications: [
+      "Provide relief from urinary tract infection",
+      "Help flush out toxins & excess fluids from the body",
+      "Provide relief from burning sensation during urination",
+      "Increase urine PH",
+      "Prevent the formation growth and aggregation of crystals in kidney",
+      "Asymptomatic bacteria in pregnancy"
     ]
   }
 ];

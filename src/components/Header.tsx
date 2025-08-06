@@ -31,7 +31,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <img src="/images/ENDEAR.png" alt="Endearpharma Logo" className="h-12 w-auto" />
+          <img src="/images/FIN.webp" alt="Endearpharma Logo" className="h-12  w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

@@ -28,8 +28,8 @@ export const companyInfo = {
   },
   contact: {
     email: "info@endear-pharma.com",
-    phone: "095574 88004",
-    address: "BHEL Township, Salempur Mahdood, Haridwar, Uttarakhand 249402",
+    phone: "7906494082",
+    address: "Plot - 70 Shiva Enclave, Salempur, Mahdood - 2, Haridwar, Uttarakhand 249402, Bharat",
     hours: "Monday - Friday: 9:00 AM - 5:00 PM"
   },
   socialMedia: {
