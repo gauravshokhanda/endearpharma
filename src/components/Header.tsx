@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Pill } from 'lucide-react';
-import { companyInfo } from '../data/companyInfo';
+import { Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +28,13 @@ const Header: React.FC = () => {
         isScrolled || isOpen ? 'bg-white shadow-md' : 'bg-white/90 backdrop-blur-sm'
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center space-x-2">
-          <img src="/images/FIN.webp" alt="Endearpharma Logo" className="h-12  w-auto" />
+      <div className="container mx-auto px-2 py-2 flex justify-between items-center h-[72px]">
+        <Link to="/" className="flex items-center h-full">
+          <img
+            src="/images/FIN.webp"
+            alt="Endearpharma Logo"
+            className="w-44 h-44"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -39,7 +42,6 @@ const Header: React.FC = () => {
           <NavLink to="/" isActive={isActive('/')}>Home</NavLink>
           <NavLink to="/products" isActive={isActive('/products')}>Products</NavLink>
           <NavLink to="/about" isActive={isActive('/about')}>About</NavLink>
-
           <NavLink to="/contact" isActive={isActive('/contact')}>Contact</NavLink>
         </nav>
 
@@ -64,7 +66,6 @@ const Header: React.FC = () => {
             <MobileNavLink to="/" isActive={isActive('/')}>Home</MobileNavLink>
             <MobileNavLink to="/products" isActive={isActive('/products')}>Products</MobileNavLink>
             <MobileNavLink to="/about" isActive={isActive('/about')}>About</MobileNavLink>
-
             <MobileNavLink to="/contact" isActive={isActive('/contact')}>Contact</MobileNavLink>
           </nav>
         </div>
