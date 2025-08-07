@@ -19,9 +19,6 @@ const Footer: React.FC = () => {
               {companyInfo.tagline}
             </p>
             <div className="flex space-x-4">
-              <a href={companyInfo.socialMedia.twitter} target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-secondary-red transition-colors">
-                <Twitter size={20} />
-              </a>
               <a href={companyInfo.socialMedia.facebook} target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-secondary-red transition-colors">
                 <Facebook size={20} />
               </a>
